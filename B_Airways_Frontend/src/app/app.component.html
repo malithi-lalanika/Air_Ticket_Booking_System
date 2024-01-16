@@ -1,0 +1,50 @@
+<div *ngIf='isLoggedinstatus==="1" ; else elseBlock'>
+  <div class="rightnavleft">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <ul class="navbar-nav me-auto order-0 ">
+        <li class = "nav-item">
+          <a routerLink="searchflight" routerLinkActive="active" class="nav-link" >Search Flights</a>
+        </li>
+        <li class = "nav-item">
+          <a routerLink="bookinglist" routerLinkActive="active" class="nav-link" >My Bookings</a>
+        </li>
+      </ul>
+      
+      <ul class = "navbar-nav ms-auto">
+        <li class = "nav-item">
+          <a routerLink="updateuser" routerLinkActive="active" class="nav-link" >Update Profile</a> 
+        </li>
+        <li class = "nav-item">
+          <a class="nav-link" (click)="userLogout()" style = "cursor: pointer;">Sign Out</a> 
+        </li>
+      </ul>
+    </nav>
+  </div>
+      
+        </div>
+        
+        <ng-template #elseBlock>
+          <div class="rightnavfirst">
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+              <ul class = "navbar-nav ms-auto">
+            <li class = "nav-item">
+              <a routerLink="userlogin" routerLinkActive="active" class="nav-link" >Sign in</a> 
+            </li>
+            <li class = "nav-item">
+              <a routerLink="userregister" routerLinkActive="active" class="nav-link" >Sign up</a> 
+            </li> 
+          </ul>
+        </nav>  
+          </div>
+            
+        </ng-template>  
+  
+
+
+
+<div class="welcomePage">
+  <router-outlet></router-outlet>
+</div>
+
+
+

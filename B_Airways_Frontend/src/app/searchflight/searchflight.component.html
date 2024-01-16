@@ -1,0 +1,26 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Search A Flight </h3>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="custom-select" style="width:200px;">
+            <label> Origin</label>
+            <select [(ngModel)]="search.origin" type="text" name = "origin" id = "origin" class="classic">
+                <option *ngFor="let c of airports" [ngValue]="c.airportname">{{c.airportname}}</option>
+              </select>
+        </div>
+
+        <div class="custom-select" style="width:200px;">
+            <label> Destination</label>
+            <select [(ngModel)]="search.destination" type="text" name = "destination" id = "destination" class="classic">
+                <option *ngFor="let c of airports" [ngValue]="c.airportname">{{c.airportname}}</option>
+              </select>
+        </div>
+
+        
+        
+        
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 

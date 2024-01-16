@@ -1,0 +1,26 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Book A Seat </h3>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="custom-select" style="width:500px;">
+            <label> Select Class</label>
+            <select [(ngModel)]="bookAseat.classname" (ngModelChange)="onClassChange(bookAseat.classname)" type="text" name = "classname" id = "classname" class="classic">
+                <option *ngFor="let class of classes" [ngValue]="class">{{class}}</option>
+              </select>
+        </div>
+
+        <div class="custom-select" style="width:500px;" *ngIf="bookAseat.classname">
+            <label> Select A Seat Number (Only Available Seats are Displayed)</label>
+            <select [(ngModel)]="bookAseat.seat" type="number" name = "seat" id = "seat" class="classic">
+                <option *ngFor="let seat of seats" [ngValue]="seat">{{seat}}</option>
+              </select>
+        </div>
+
+        
+        
+        
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 

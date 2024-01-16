@@ -1,0 +1,33 @@
+<h3> View Booking Details</h3>
+<div class="bookingdetails">
+    <div class="origin">
+        <label> <b> Origin: </b></label> {{bookingdetails.origin}}
+    </div>
+    <div class="destination">
+        <label> <b> Destination: </b></label> {{bookingdetails.destination}}
+    </div>
+    <div class="date">
+        <label> <b> Date: </b></label> {{bookingdetails.date}}
+    </div>
+    <div class="starttime">
+        <label> <b> Start Time: </b></label> {{bookingdetails.starttime}}
+    </div>
+    <div class="endtime">
+        <label> <b> End Time: </b></label> {{bookingdetails.endtime}}
+    </div>
+    <div class="classname">
+        <label> <b> Class: </b></label> {{bookingdetails.classname}}
+    </div>
+    <div class="seat">
+        <label> <b> Seat Number: </b></label> {{bookingdetails.seat}}
+    </div>
+    <div class="price">
+        <label> <b> Price: </b></label> {{bookingdetails.price}}
+    </div>
+
+    <div class="submitbutton">
+        <button (click) = "deleteBooking(bookingdetails.bookingid)" class = "btn btn-success" type ="submit">Cancel this Booking</button>
+    </div>
+    
+</div>
+

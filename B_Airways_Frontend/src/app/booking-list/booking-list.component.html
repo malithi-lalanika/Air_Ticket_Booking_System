@@ -1,0 +1,23 @@
+<h2> Booking List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Date</th>
+            <th> Origin</th>
+            <th> Destination </th>
+            <th> Start Time </th>
+            <th>  </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let booking of bookinglist" >  
+            <td> {{ booking.date }} </td>
+            <td> {{ booking.origin }} </td>
+            <td> {{ booking.destination }} </td>
+            <td> {{ booking.starttime }} </td>
+            <td> <button (click) = "bookingDetails(booking)" class = "btn btn-info"> Details</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

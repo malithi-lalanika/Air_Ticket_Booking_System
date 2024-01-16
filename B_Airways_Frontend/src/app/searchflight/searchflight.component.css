@@ -1,0 +1,22 @@
+.custom-select {
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .custom-select label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .custom-select select {
+    display: block;
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  

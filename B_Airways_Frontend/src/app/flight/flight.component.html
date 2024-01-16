@@ -1,0 +1,33 @@
+<h3> View Flight Details</h3>
+<div class="bookaflight">
+    <div class="origin">
+        <label> <b> Origin: </b></label> {{flight.origin}}
+    </div>
+    <div class="destination">
+        <label> <b> Destination: </b></label> {{flight.destination}}
+    </div>
+    <div class="date">
+        <label> <b> Date: </b></label> {{flight.date}}
+    </div>
+    <div class="starttime">
+        <label> <b> Start Time: </b></label> {{flight.starttime}}
+    </div>
+    <div class="endtime">
+        <label> <b> End Time: </b></label> {{flight.endtime}}
+    </div>
+    <div class="eprice">
+        <label> <b> Economy Class Price: </b></label> {{flight.price}}
+    </div>
+    <div class="bprice">
+        <label> <b> Business Class Price: </b></label> {{flight.price*2}}
+    </div>
+    <div class="pprice">
+        <label> <b> Platinum Class Price: </b></label> {{flight.price*3}}
+    </div>
+
+    <div class="submitbutton">
+        <button (click) = "bookAflight()" class = "btn btn-success" type ="submit">Book A Seat</button>
+    </div>
+    
+</div>
+
